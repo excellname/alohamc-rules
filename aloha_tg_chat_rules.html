@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Aloha — Правила чата в Telegram</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --gray:#5B6573; --aqua:#03b6fc; --purple:#7532fa;
+  --bg:#0d1f24; --card:#0f2730; --accent:#10313b;
+}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(1200px 700px at 20% -10%, #12333d 0%, var(--bg) 40%), var(--bg);
+     color:var(--gray);font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, 'Noto Sans', sans-serif;}
+.container{max-width:980px;margin:40px auto;padding:0 20px;}
+.header{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.logo{font-weight:800;font-family:Manrope, Inter, sans-serif;font-size:28px;letter-spacing:.5px;
+      background:linear-gradient(90deg,var(--purple), var(--aqua));-webkit-background-clip:text;background-clip:text;color:transparent}
+.badge{padding:6px 10px;border-radius:999px;background:#0b3140;border:1px solid #104756;font-weight:600;color:#7fd9ff;font-size:12px}
+.card{background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.0));border:1px solid #173945;border-radius:20px;
+      box-shadow:0 10px 30px rgba(0,0,0,.25);padding:22px;margin-bottom:18px}
+h1{margin:4px 0 8px;font-size:28px;font-weight:800;color:#dbe7ef}
+h2{margin:18px 0 10px;font-size:18px;font-weight:800;color:#b9cbd7}
+p.lead{margin:0 0 14px;font-size:15px;opacity:.95;line-height:1.55}
+.rule-list{display:grid;grid-template-columns:1fr;gap:10px;margin:10px 0}
+.rule{background:var(--card);border:1px solid #11323b;border-radius:14px;padding:14px 14px;display:flex;gap:12px;align-items:flex-start}
+.rule .num{flex:0 0 28px;height:28px;line-height:28px;border-radius:9px;text-align:center;font-weight:800;font-size:13px;
+           color:#eaf7ff;background:#0c2a33;border:1px solid #16424e}
+.rule .text{font-size:14px}
+.kit{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.kit .box{background:var(--card);border:1px solid #11323b;border-radius:14px;padding:14px}
+code{background:#0c2a33;border:1px solid #16424e;padding:2px 6px;border-radius:6px;color:#cfe8ff}
+.footer{margin:8px 0 0;font-size:12px;opacity:.8}
+.warning{color:#ffd36a;font-weight:800}
+a{color:var(--aqua);text-decoration:none;border-bottom:1px dashed #1c6882}
+a:hover{opacity:.9}
+@media (max-width:800px){ .kit{grid-template-columns:1fr} }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">Aloha&nbsp;Community</div>
+      <div class="badge">Правила чата • обновлено 19.10.2025</div>
+    </div>
+
+    <div class="card">
+      <h1>Правила чата в TG</h1>
+      <p class="lead">Мы хотим, чтобы чат был тёплым и полезным. Соблюдая эти пункты, ты помогаешь поддерживать <b style="color:var(--aqua)">гавайский вайб</b> и комфорт для всех.</p>
+      <div class="rule-list">
+        <div class="rule"><div class="num">1</div><div class="text"><b>Уважай участников.</b> Запрещены оскорбления, травля, разжигание конфликтов, дискриминация и токсичность.</div></div>
+        <div class="rule"><div class="num">2</div><div class="text"><b>Чистота ленты.</b> Спам, флуд, капс‑лок, бессмысленные теги/стикер‑бомбы — нельзя.</div></div>
+        <div class="rule"><div class="num">3</div><div class="text"><b>Реклама и ссылки.</b> Любые ссылки на сторонние ресурсы, реферальные/пригласительные — только с разрешения модератора.</div></div>
+        <div class="rule"><div class="num">4</div><div class="text"><b>NSFW/18+</b> и шок‑контент — запрещены. Сюда же относится пиратство и обсуждение нелегального.</div></div>
+        <div class="rule"><div class="num">5</div><div class="text"><b>Софт, читы, баг‑абуз.</b> Продажа/распространение/обсуждение обходов защиты запрещены. Наш приоритет — честная игра.</div></div>
+        <div class="rule"><div class="num">6</div><div class="text"><b>Торговля.</b> Покупка/продажа внутриигровых ценностей — только в рамках правил сервера. Никогда не переводите деньги третьим лицам без гарантий от администрации.</div></div>
+        <div class="rule"><div class="num">7</div><div class="text"><b>Оффтоп.</b> Допустим в умеренных количествах, но уважай тему тредов. Для длительных разговоров используйте ветки.</div></div>
+        <div class="rule"><div class="num">8</div><div class="text"><b>Ник/аватар.</b> Без чужой выдачи за администрацию, не используйте провокационные имена или контент.</div></div>
+        <div class="rule"><div class="num">9</div><div class="text"><b>Личные данные.</b> Не публикуйте чужие данные без согласия. Скрины приватных переписок — только с разрешения всех участников.</div></div>
+        <div class="rule"><div class="num">10</div><div class="text"><b>Язык общения.</b> Русский/English приветствуются. Пишите читабельно, избегайте транслита и токсичного сленга.</div></div>
+      </div>
+      <div class="kit">
+        <div class="box">
+          <h2>Иерархия санкций</h2>
+          <ul>
+            <li>Предупреждение в личку/реплаем.</li>
+            <li>Удаление сообщения.</li>
+            <li>Тайм‑аут 1–24 ч (slowmode или mute).</li>
+            <li>Блокировка в чате — при повторных/тяжёлых нарушениях.</li>
+          </ul>
+        </div>
+        <div class="box">
+          <h2>Обжалование</h2>
+          <p>Не согласны с санкцией? Напишите в <a href="#">@AlohaSupport</a> с кратким описанием ситуации и скриншотами. Эмоции — на минимум, факты — на максимум.</p>
+        </div>
+      </div>
+      <p class="footer"><span class="warning">Важно:</span> Администраторы могут принимать решения по ситуации, если это необходимо для безопасности и спокойствия сообщества.</p>
+    </div>
+  </div>
+</body>
+</html>
