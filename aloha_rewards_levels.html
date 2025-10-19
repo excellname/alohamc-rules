@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Aloha — Награды за уровни (1–100)</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --gray:#5B6573; --aqua:#03b6fc; --purple:#7532fa;
+  --bg:#0d1f24; --card:#0f2730; --accent:#10313b;
+}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(1200px 700px at 20% -10%, #12333d 0%, var(--bg) 40%), var(--bg);color:var(--gray);font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", sans-serif;}
+.container{max-width:1100px;margin:40px auto;padding:0 20px;}
+.header{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.logo{font-weight:800;font-family:Manrope, Inter, sans-serif;font-size:28px;letter-spacing:.5px;background:linear-gradient(90deg,var(--purple), var(--aqua));-webkit-background-clip:text;background-clip:text;color:transparent}
+.badge{padding:6px 10px;border-radius:999px;background:#0b3140;border:1px solid #104756;font-weight:600;color:#7fd9ff;font-size:12px}
+.card{background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.0));border:1px solid #173945;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.25);padding:20px}
+h1{margin:4px 0 8px;font-size:28px;font-weight:800;color:var(--gray)}
+.sub{margin:0 0 20px;font-size:15px;opacity:.9;line-height:1.5}
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:20px 0}
+.kpi{background:var(--card);border:1px solid #11323b;border-radius:16px;padding:16px;text-align:center}
+.kpi .v{font-size:22px;font-weight:800;color:var(--aqua)}
+.kpi .t{font-size:12px;opacity:.8;margin-top:6px}
+
+.table-wrap{overflow:auto;border-radius:16px;border:1px solid #153a44}
+table{width:100%;border-collapse:separate;border-spacing:0;background:var(--card)}
+th, td{padding:12px 14px;border-bottom:1px solid #13323c;font-size:14px}
+th{position:sticky;top:0;background:#0d2b33;color:#c6d4de;text-align:left;font-weight:700;letter-spacing:.3px}
+tr:hover td{background:#0f2e37}
+td.lvl{font-weight:800;color:#cde3f3}
+td.acoin{font-weight:800;color:var(--purple)}
+td.money{font-weight:800;color:var(--aqua)}
+.tag{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:999px;background:#0c2a33;border:1px solid #16424e;font-weight:700;font-size:12px;color:#b5c7d3}
+.tag .dot{width:7px;height:7px;border-radius:50%}
+.tag.res .dot{background:#7bd1ff}
+.tag.rare .dot{background:#ffd36a}
+.footer{margin:22px 0 10px;font-size:12px;opacity:.8}
+@media (max-width:800px){
+  .kpis{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">Aloha&nbsp;Rewards</div>
+      <div class="badge">v2.2 • обновлено 19.10.2025</div>
+    </div>
+    <div class="card">
+      <h1>Награды за уровни <span style="color:var(--aqua)">1–100</span></h1>
+      <p class="sub">За каждый уровень ты получаешь <b style="color:var(--aqua)">игровую валюту</b>, <b style="color:var(--purple)">ACoin</b> и ключи к кейсам. Суммы растут по диапазонам — прокачка ощущается на каждом шаге.</p>
+      <div class="kpis">
+        <div class="kpi"><div class="v">10,000 AC</div><div class="t">Всего ACoin за 1–100</div></div>
+        <div class="kpi"><div class="v">585,000 $</div><div class="t">Всего игровой валюты</div></div>
+        <div class="kpi"><div class="v">100</div><div class="t">Кейс ресурсов ключей</div></div>
+        <div class="kpi"><div class="v">20</div><div class="t">Кейс редких ресурсов ключей</div></div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Уровень</th>
+              <th>ACoin</th>
+              <th>Игровая валюта</th>
+              <th>Кейсы</th>
+            </tr>
+          </thead>
+          <tbody>
+<tr>
+      <td class="lvl">1</td>
+      <td class="acoin">50</td>
+      <td class="money">3,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">2</td>
+      <td class="acoin">50</td>
+      <td class="money">3,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">3</td>
+      <td class="acoin">50</td>
+      <td class="money">3,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">4</td>
+      <td class="acoin">50</td>
+      <td class="money">3,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">5</td>
+      <td class="acoin">50</td>
+      <td class="money">3,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span> &nbsp; <span class="tag rare"><span class="dot"></span>Кейс редких ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">6</td>
+      <td class="acoin">50</td>
+      <td class="money">3,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">7</td>
+      <td class="acoin">50</td>
+      <td class="money">3,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">8</td>
+      <td class="acoin">50</td>
+      <td class="money">3,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">9</td>
+      <td class="acoin">50</td>
+      <td class="money">3,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">10</td>
+      <td class="acoin">50</td>
+      <td class="money">3,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span> &nbsp; <span class="tag rare"><span class="dot"></span>Кейс редких ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">11</td>
+      <td class="acoin">60</td>
+      <td class="money">3,500 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">12</td>
+      <td class="acoin">60</td>
+      <td class="money">3,500 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">13</td>
+      <td class="acoin">60</td>
+      <td class="money">3,500 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">14</td>
+      <td class="acoin">60</td>
+      <td class="money">3,500 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">15</td>
+      <td class="acoin">60</td>
+      <td class="money">3,500 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span> &nbsp; <span class="tag rare"><span class="dot"></span>Кейс редких ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">16</td>
+      <td class="acoin">60</td>
+      <td class="money">3,500 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">17</td>
+      <td class="acoin">60</td>
+      <td class="money">3,500 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">18</td>
+      <td class="acoin">60</td>
+      <td class="money">3,500 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">19</td>
+      <td class="acoin">60</td>
+      <td class="money">3,500 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">20</td>
+      <td class="acoin">60</td>
+      <td class="money">3,500 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span> &nbsp; <span class="tag rare"><span class="dot"></span>Кейс редких ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">21</td>
+      <td class="acoin">70</td>
+      <td class="money">4,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">22</td>
+      <td class="acoin">70</td>
+      <td class="money">4,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">23</td>
+      <td class="acoin">70</td>
+      <td class="money">4,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">24</td>
+      <td class="acoin">70</td>
+      <td class="money">4,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">25</td>
+      <td class="acoin">70</td>
+      <td class="money">4,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span> &nbsp; <span class="tag rare"><span class="dot"></span>Кейс редких ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">26</td>
+      <td class="acoin">70</td>
+      <td class="money">4,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">27</td>
+      <td class="acoin">70</td>
+      <td class="money">4,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">28</td>
+      <td class="acoin">70</td>
+      <td class="money">4,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">29</td>
+      <td class="acoin">70</td>
+      <td class="money">4,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">30</td>
+      <td class="acoin">70</td>
+      <td class="money">4,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span> &nbsp; <span class="tag rare"><span class="dot"></span>Кейс редких ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">31</td>
+      <td class="acoin">80</td>
+      <td class="money">4,500 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">32</td>
+      <td class="acoin">80</td>
+      <td class="money">4,500 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">33</td>
+      <td class="acoin">80</td>
+      <td class="money">4,500 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">34</td>
+      <td class="acoin">80</td>
+      <td class="money">4,500 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">35</td>
+      <td class="acoin">80</td>
+      <td class="money">4,500 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span> &nbsp; <span class="tag rare"><span class="dot"></span>Кейс редких ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">36</td>
+      <td class="acoin">80</td>
+      <td class="money">4,500 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">37</td>
+      <td class="acoin">80</td>
+      <td class="money">4,500 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">38</td>
+      <td class="acoin">80</td>
+      <td class="money">4,500 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">39</td>
+      <td class="acoin">80</td>
+      <td class="money">4,500 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">40</td>
+      <td class="acoin">80</td>
+      <td class="money">4,500 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span> &nbsp; <span class="tag rare"><span class="dot"></span>Кейс редких ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">41</td>
+      <td class="acoin">90</td>
+      <td class="money">5,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">42</td>
+      <td class="acoin">90</td>
+      <td class="money">5,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">43</td>
+      <td class="acoin">90</td>
+      <td class="money">5,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">44</td>
+      <td class="acoin">90</td>
+      <td class="money">5,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">45</td>
+      <td class="acoin">90</td>
+      <td class="money">5,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span> &nbsp; <span class="tag rare"><span class="dot"></span>Кейс редких ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">46</td>
+      <td class="acoin">90</td>
+      <td class="money">5,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">47</td>
+      <td class="acoin">90</td>
+      <td class="money">5,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">48</td>
+      <td class="acoin">90</td>
+      <td class="money">5,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">49</td>
+      <td class="acoin">90</td>
+      <td class="money">5,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">50</td>
+      <td class="acoin">90</td>
+      <td class="money">5,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span> &nbsp; <span class="tag rare"><span class="dot"></span>Кейс редких ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">51</td>
+      <td class="acoin">110</td>
+      <td class="money">5,500 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">52</td>
+      <td class="acoin">110</td>
+      <td class="money">5,500 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">53</td>
+      <td class="acoin">110</td>
+      <td class="money">5,500 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">54</td>
+      <td class="acoin">110</td>
+      <td class="money">5,500 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">55</td>
+      <td class="acoin">110</td>
+      <td class="money">5,500 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span> &nbsp; <span class="tag rare"><span class="dot"></span>Кейс редких ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">56</td>
+      <td class="acoin">110</td>
+      <td class="money">5,500 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">57</td>
+      <td class="acoin">110</td>
+      <td class="money">5,500 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">58</td>
+      <td class="acoin">110</td>
+      <td class="money">5,500 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">59</td>
+      <td class="acoin">110</td>
+      <td class="money">5,500 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">60</td>
+      <td class="acoin">110</td>
+      <td class="money">5,500 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span> &nbsp; <span class="tag rare"><span class="dot"></span>Кейс редких ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">61</td>
+      <td class="acoin">120</td>
+      <td class="money">6,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">62</td>
+      <td class="acoin">120</td>
+      <td class="money">6,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">63</td>
+      <td class="acoin">120</td>
+      <td class="money">6,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">64</td>
+      <td class="acoin">120</td>
+      <td class="money">6,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">65</td>
+      <td class="acoin">120</td>
+      <td class="money">6,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span> &nbsp; <span class="tag rare"><span class="dot"></span>Кейс редких ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">66</td>
+      <td class="acoin">120</td>
+      <td class="money">6,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">67</td>
+      <td class="acoin">120</td>
+      <td class="money">6,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">68</td>
+      <td class="acoin">120</td>
+      <td class="money">6,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">69</td>
+      <td class="acoin">120</td>
+      <td class="money">6,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">70</td>
+      <td class="acoin">120</td>
+      <td class="money">6,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span> &nbsp; <span class="tag rare"><span class="dot"></span>Кейс редких ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">71</td>
+      <td class="acoin">130</td>
+      <td class="money">7,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">72</td>
+      <td class="acoin">130</td>
+      <td class="money">7,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">73</td>
+      <td class="acoin">130</td>
+      <td class="money">7,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">74</td>
+      <td class="acoin">130</td>
+      <td class="money">7,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">75</td>
+      <td class="acoin">130</td>
+      <td class="money">7,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span> &nbsp; <span class="tag rare"><span class="dot"></span>Кейс редких ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">76</td>
+      <td class="acoin">130</td>
+      <td class="money">7,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">77</td>
+      <td class="acoin">130</td>
+      <td class="money">7,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">78</td>
+      <td class="acoin">130</td>
+      <td class="money">7,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">79</td>
+      <td class="acoin">130</td>
+      <td class="money">7,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">80</td>
+      <td class="acoin">130</td>
+      <td class="money">7,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span> &nbsp; <span class="tag rare"><span class="dot"></span>Кейс редких ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">81</td>
+      <td class="acoin">140</td>
+      <td class="money">8,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">82</td>
+      <td class="acoin">140</td>
+      <td class="money">8,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">83</td>
+      <td class="acoin">140</td>
+      <td class="money">8,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">84</td>
+      <td class="acoin">140</td>
+      <td class="money">8,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">85</td>
+      <td class="acoin">140</td>
+      <td class="money">8,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span> &nbsp; <span class="tag rare"><span class="dot"></span>Кейс редких ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">86</td>
+      <td class="acoin">140</td>
+      <td class="money">8,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">87</td>
+      <td class="acoin">140</td>
+      <td class="money">8,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">88</td>
+      <td class="acoin">140</td>
+      <td class="money">8,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">89</td>
+      <td class="acoin">140</td>
+      <td class="money">8,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">90</td>
+      <td class="acoin">140</td>
+      <td class="money">8,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span> &nbsp; <span class="tag rare"><span class="dot"></span>Кейс редких ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">91</td>
+      <td class="acoin">150</td>
+      <td class="money">12,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">92</td>
+      <td class="acoin">150</td>
+      <td class="money">12,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">93</td>
+      <td class="acoin">150</td>
+      <td class="money">12,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">94</td>
+      <td class="acoin">150</td>
+      <td class="money">12,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">95</td>
+      <td class="acoin">150</td>
+      <td class="money">12,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span> &nbsp; <span class="tag rare"><span class="dot"></span>Кейс редких ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">96</td>
+      <td class="acoin">150</td>
+      <td class="money">12,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">97</td>
+      <td class="acoin">150</td>
+      <td class="money">12,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">98</td>
+      <td class="acoin">150</td>
+      <td class="money">12,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">99</td>
+      <td class="acoin">150</td>
+      <td class="money">12,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span></td>
+    </tr>
+<tr>
+      <td class="lvl">100</td>
+      <td class="acoin">150</td>
+      <td class="money">12,000 $</td>
+      <td><span class="tag res"><span class="dot"></span>Кейс ресурсов ×1</span> &nbsp; <span class="tag rare"><span class="dot"></span>Кейс редких ресурсов ×1</span></td>
+    </tr>
+        </tbody>
+        </table>
+      </div>
+      <p class="footer">Правила расчёта: каждый уровень даёт 2000$ + диапазонный бонус; ACoin выдаётся ступенями каждые 10 уровней; Кейс ресурсов — за каждый уровень; Кейс редких ресурсов — дополнительно на каждом 5‑м. Цвета и стиль соответствуют Aloha UI.</p>
+    </div>
+  </div>
+</body>
+</html>
