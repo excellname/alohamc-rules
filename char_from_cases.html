@@ -1,0 +1,645 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Чары из кейсов — сводка</title>
+<style>
+:root {
+  --bg: #0b0f14;
+  --card: #0f1620;
+  --muted: #a3b3c2;
+  --text: #e6eef7;
+  --accent: #5eead4;
+  --border: #1f2a37;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,'Noto Sans',sans-serif;margin:0;padding:40px}
+h1{font-size:28px;margin:0 0 24px 0}
+h2{font-size:22px;margin:32px 0 16px 0;border-bottom:1px solid var(--border);padding-bottom:8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;box-shadow:0 1px 0 rgba(255,255,255,0.03) inset}
+.card h3{margin:0 0 8px 0;font-size:18px;color:#9dd6ff}
+.descr{color:var(--muted);font-size:14px;line-height:1.35;margin-bottom:10px;white-space:pre-wrap}
+.meta{font-size:13px;margin-bottom:8px;color:#cde3f7}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th, td{padding:6px 8px;border-bottom:1px dashed var(--border)}
+th{color:#9bb0bf;text-align:left;font-weight:600}
+.badge{display:inline-block;border:1px solid var(--border);background:#0b1320;padding:2px 8px;border-radius:999px;font-size:12px;color:#d6e3f0}
+.header{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+small{color:#8aa2b5}
+.footer{margin-top:28px;color:#8aa2b5;font-size:12px}
+.search{position:sticky;top:0;background:linear-gradient(var(--bg), rgba(11,15,20,0.8) 60%, transparent);padding-bottom:16px;margin:-40px -40px 24px -40px;padding:16px 40px 24px 40px;border-bottom:1px solid var(--border)}
+.search input{width:100%;padding:12px 14px;border-radius:12px;border:1px solid var(--border);background:#0f1722;color:var(--text);font-size:14px}
+.hidden{display:none}
+</style>
+</head>
+<body>
+<div class="search">
+  <h1>Чары из кейсов — сводка</h1>
+  <input id="q" oninput="filterCards()" placeholder="Поиск по названию, описанию или предмету…"/>
+  <small>Источник: файлы WeaponEnchant.yml, ArmorEnchant.yml, ToolsEnchant.yml, enchantments.yml. Пустой шанс = 100%, пустой КД = 0.</small>
+</div>
+<h2>Броня</h2><div class='grid'>
+        <div class="card">
+          <div class="header"><h3>Chunky</h3><span class="badge">Нагрудник</span></div>
+          <div class="descr">Шанс снизить поступающий урон.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>10%</td><td>10с</td></tr><tr><td>2</td><td>20%</td><td>9с</td></tr><tr><td>3</td><td>24%</td><td>8с</td></tr><tr><td>4</td><td>30%</td><td>7с</td></tr><tr><td>5</td><td>36%</td><td>6с</td></tr><tr><td>6</td><td>40%</td><td>5с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Convulse</h3><span class="badge">Ботинки</span></div>
+          <div class="descr">Шанс подкинуть вашего врага
+при получении урона.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>16%</td><td>10с</td></tr><tr><td>2</td><td>20%</td><td>9с</td></tr><tr><td>3</td><td>24%</td><td>8с</td></tr><tr><td>4</td><td>28%</td><td>7с</td></tr><tr><td>5</td><td>32%</td><td>6с</td></tr><tr><td>6</td><td>40%</td><td>5с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Creeper Armor</h3><span class="badge">Броня</span></div>
+          <div class="descr">Шанс не получить урон от взрыва
+Макс. lvl + шанс подлечиться.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>25%</td><td>0с</td></tr><tr><td>2</td><td>50%</td><td>0с</td></tr><tr><td>3</td><td>75%</td><td>0с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Explosive Demise</h3><span class="badge">Поножи</span></div>
+          <div class="descr">Summon creepers as your guards
+when near death.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>50%</td><td>120с</td></tr><tr><td>2</td><td>100%</td><td>60с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Gears</h3><span class="badge">Ботинки</span></div>
+          <div class="descr">Бонус к скорости движения.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>100%</td><td>0с</td></tr><tr><td>2</td><td>100%</td><td>0с</td></tr><tr><td>3</td><td>100%</td><td>0с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Implants</h3><span class="badge">Шлем</span></div>
+          <div class="descr">Шанс восстановить сытость.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>30%</td><td>0с</td></tr><tr><td>2</td><td>50%</td><td>0с</td></tr><tr><td>3</td><td>70%</td><td>0с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Lava Walker</h3><span class="badge">Ботинки</span></div>
+          <div class="descr">Ходьба по лаве.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>100%</td><td>0с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Lucid</h3><span class="badge">Броня</span></div>
+          <div class="descr">Шанс снять слепоту и получить
+ночное зрение при уроне.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>22%</td><td>5с</td></tr><tr><td>2</td><td>32%</td><td>5с</td></tr><tr><td>3</td><td>42%</td><td>5с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Obsidianshield</h3><span class="badge">Броня</span></div>
+          <div class="descr">Постоянное сопротивление огню.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>100%</td><td>0с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Overload</h3><span class="badge">Броня</span></div>
+          <div class="descr">Дополнительные сердца.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>100%</td><td>0с</td></tr><tr><td>2</td><td>100%</td><td>0с</td></tr><tr><td>3</td><td>100%</td><td>0с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Patch</h3><span class="badge">Броня</span></div>
+          <div class="descr">Шанс починки брони при уроне от мобов.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>25%</td><td>7с</td></tr><tr><td>2</td><td>35%</td><td>7с</td></tr><tr><td>3</td><td>45%</td><td>7с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Phoenix</h3><span class="badge">Нагрудник</span></div>
+          <div class="descr">Шанс восреснуть после смерти.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>50%</td><td>600с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Plummet</h3><span class="badge">Ботинки</span></div>
+          <div class="descr">Урон мобам вокруг
+при приземлении.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>40%</td><td>0с</td></tr><tr><td>2</td><td>80%</td><td>0с</td></tr><tr><td>3</td><td>100%</td><td>0с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Reflect</h3><span class="badge">Броня</span></div>
+          <div class="descr">Шанс поглотить и
+отразить урон.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>3%</td><td>5с</td></tr><tr><td>2</td><td>5%</td><td>5с</td></tr><tr><td>3</td><td>8%</td><td>5с</td></tr><tr><td>4</td><td>12%</td><td>5с</td></tr><tr><td>5</td><td>18%</td><td>5с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Rocket Escape</h3><span class="badge">Ботинки</span></div>
+          <div class="descr">Катапультирует при низком HP.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>20%</td><td>8с</td></tr><tr><td>2</td><td>34%</td><td>8с</td></tr><tr><td>3</td><td>40%</td><td>8с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Shockwave</h3><span class="badge">Нагрудник</span></div>
+          <div class="descr">Шанс отбросить врага
+при низком HP у вас.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>10%</td><td>4с</td></tr><tr><td>2</td><td>20%</td><td>4с</td></tr><tr><td>3</td><td>30%</td><td>4с</td></tr><tr><td>4</td><td>40%</td><td>4с</td></tr><tr><td>5</td><td>50%</td><td>4с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Spirits</h3><span class="badge">Броня</span></div>
+          <div class="descr">Шанс призвать огненных стражей.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>50%</td><td>60с</td></tr><tr><td>2</td><td>100%</td><td>120с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Ward</h3><span class="badge">Броня</span></div>
+          <div class="descr">Шанс полностью поглотить урон</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>3%</td><td>5с</td></tr><tr><td>2</td><td>7%</td><td>5с</td></tr><tr><td>3</td><td>11%</td><td>5с</td></tr><tr><td>4</td><td>15%</td><td>5с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Water Walker</h3><span class="badge">Ботинки</span></div>
+          <div class="descr">Ходьба по воде.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>100%</td><td>0с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Wings</h3><span class="badge">Ботинки</span></div>
+          <div class="descr">Держа зачарованный предмет в руке
+вы можете летать!</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>100%</td><td>0с</td></tr></tbody>
+        </table>
+        
+        </div>
+        </div>
+<h2>Оружие</h2><div class='grid'>
+        <div class="card">
+          <div class="header"><h3>Block</h3><span class="badge">Меч</span></div>
+          <div class="descr">Шанс заблокировать атаку
+и отразить до 4х атак.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>25%</td><td>4с</td></tr><tr><td>2</td><td>50%</td><td>4с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Chaos</h3><span class="badge">Меч</span></div>
+          <div class="descr">Накладывает на врага
+иссушение и слабость.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>25%</td><td>5с</td></tr><tr><td>2</td><td>50%</td><td>5с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Critical</h3><span class="badge">Мечи</span></div>
+          <div class="descr">Шанс критической атаки.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>10%</td><td>5с</td></tr><tr><td>2</td><td>25%</td><td>5с</td></tr><tr><td>3</td><td>50%</td><td>5с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Deranged</h3><span class="badge">Меч</span></div>
+          <div class="descr">Бьёт молнией во врага.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>50%</td><td>10с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Endmaster</h3><span class="badge">Меч</span></div>
+          <div class="descr">x2 урон по мобам в Энде.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>100%</td><td>0с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Explosive</h3><span class="badge">Лук</span></div>
+          <div class="descr">Шанс, что стрелы взорвутся.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>50%</td><td>5с</td></tr><tr><td>2</td><td>80%</td><td>5с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Ice Aspect</h3><span class="badge">Меч</span></div>
+          <div class="descr">Шанс вызвать эффект
+замедления на врага.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>25%</td><td>2с</td></tr><tr><td>2</td><td>50%</td><td>2с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Inquisitive</h3><span class="badge">Меч</span></div>
+          <div class="descr">Больше опыта с мобов.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>100%</td><td>0с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Launch</h3><span class="badge">Меч</span></div>
+          <div class="descr">ПКМ Подкидывает вас.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>100%</td><td>15с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Lifesteal</h3><span class="badge">Меч</span></div>
+          <div class="descr">Шанс украсть HP
+во время атаки.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>10%</td><td>5с</td></tr><tr><td>2</td><td>25%</td><td>4с</td></tr><tr><td>3</td><td>45%</td><td>3с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Magnet</h3><span class="badge">Мечи</span></div>
+          <div class="descr">Шанс притянуть врага к себе во время атаки.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>30%</td><td>5с</td></tr><tr><td>2</td><td>60%</td><td>5с</td></tr><tr><td>3</td><td>100%</td><td>5с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Netherling</h3><span class="badge">Меч</span></div>
+          <div class="descr">x2 урон по мобам в Аду.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>100%</td><td>0с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Night Owl</h3><span class="badge">Меч</span></div>
+          <div class="descr">Повышенный урон по мобам ночью.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>50%</td><td>0с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Nightwalker</h3><span class="badge">Меч</span></div>
+          <div class="descr">Замедляет мобов ночью.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>100%</td><td>0с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Piercing</h3><span class="badge">Лук, Арбалет</span></div>
+          <div class="descr">Доп. урон при атаке мобов.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>10%</td><td>0с</td></tr><tr><td>2</td><td>25%</td><td>0с</td></tr><tr><td>3</td><td>50%</td><td>0с</td></tr><tr><td>4</td><td>75%</td><td>0с</td></tr><tr><td>5</td><td>100%</td><td>0с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Rebound</h3><span class="badge">Оружие</span></div>
+          <div class="descr">Реген HP после убийства.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>50%</td><td>5с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Scare</h3><span class="badge">Оружие</span></div>
+          <div class="descr">Шанс 33% надеть врагу
+на голову тыкву.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>33%</td><td>20с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Spark</h3><span class="badge">Трезубец</span></div>
+          <div class="descr">Шанс поджечь цель.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>50%</td><td>3с</td></tr><tr><td>2</td><td>100%</td><td>6с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Suspend</h3><span class="badge">Меч</span></div>
+          <div class="descr">Шанс не окидывать мобов
+при атаке.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>50%</td><td>0с</td></tr><tr><td>2</td><td>100%</td><td>0с</td></tr></tbody>
+        </table>
+        
+        </div>
+        </div>
+<h2>Инструменты</h2><div class='grid'>
+        <div class="card">
+          <div class="header"><h3>Experience</h3><span class="badge">Инструменты</span></div>
+          <div class="descr">Шанс получить больше опыта при добыче.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>15%</td><td>1с</td></tr><tr><td>2</td><td>30%</td><td>2с</td></tr><tr><td>3</td><td>45%</td><td>3с</td></tr><tr><td>4</td><td>60%</td><td>4с</td></tr><tr><td>5</td><td>75%</td><td>5с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Fire Hook</h3><span class="badge">Удочка</span></div>
+          <div class="descr">Поджигает зацепленного.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>100%</td><td>60с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Gemify</h3><span class="badge">Кирка</span></div>
+          <div class="descr">Шанс 30% прератить руду в целый блок.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>30%</td><td>5с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Harvest</h3><span class="badge">Мотыга</span></div>
+          <div class="descr">Сбор посевов 3х3.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>100%</td><td>0с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Haste</h3><span class="badge">Инструменты</span></div>
+          <div class="descr">Постоянная спешка (Маши инструментами быстрее).</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>100%</td><td>0с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Hasten</h3><span class="badge">Инструменты</span></div>
+          <div class="descr">Шанс на спешку при копании.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>15%</td><td>3с</td></tr><tr><td>2</td><td>25%</td><td>3с</td></tr><tr><td>3</td><td>45%</td><td>3с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Poisoned Hook</h3><span class="badge">Удочка</span></div>
+          <div class="descr">Отравляет зацепленного.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>100%</td><td>10с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Smelting</h3><span class="badge">Кирка</span></div>
+          <div class="descr">Шанс получить сразу переплавленную руду.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>33%</td><td>0с</td></tr><tr><td>2</td><td>66%</td><td>0с</td></tr><tr><td>3</td><td>100%</td><td>0с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Telepathy</h3><span class="badge">Инструменты</span></div>
+          <div class="descr">Получать добычу сразу в инвентарь.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>50%</td><td>0с</td></tr><tr><td>2</td><td>100%</td><td>0с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Timber</h3><span class="badge">Топор</span></div>
+          <div class="descr">Валит всё дерево</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>100%</td><td>1с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Trench</h3><span class="badge">Кирка, Лопата</span></div>
+          <div class="descr">Кирка/Лопата 3х3.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>100%</td><td>0с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Tunnel</h3><span class="badge">Кирка, Лопата</span></div>
+          <div class="descr">Копает туннель и лестницы 
+в направлении взгляда.</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>100%</td><td>0с</td></tr></tbody>
+        </table>
+        
+        </div>
+        
+        <div class="card">
+          <div class="header"><h3>Vein Miner</h3><span class="badge">Кирка</span></div>
+          <div class="descr">Добывает жилу руды разом</div>
+          
+        <table>
+          <thead><tr><th>Уровень</th><th>Шанс</th><th>КД</th></tr></thead>
+          <tbody><tr><td>1</td><td>100%</td><td>5с</td></tr></tbody>
+        </table>
+        
+        </div>
+        </div>
+<div class="footer">Сгенерировано 2025-10-23 19:40:58</div>
+<script>
+function filterCards() {
+  const q = document.getElementById('q').value.toLowerCase();
+  for (const el of document.querySelectorAll('.card')) {
+    const txt = el.innerText.toLowerCase();
+    el.classList.toggle('hidden', !txt.includes(q));
+  }
+}
+</script>
+</body>
+</html>
